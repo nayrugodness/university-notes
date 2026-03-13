@@ -1,0 +1,47 @@
+graph TD
+    %% Nodo Principal
+    Firma((LA FIRMA))
+    
+    %% ¿Qué es?
+    Firma --- Q1{¿Qué es?}
+    Q1 --> A1[Unidad básica productiva]
+    Q1 --> A1_2[Transforma factores en satisfactores]
+    
+    %% ¿Por qué lo hace?
+    Firma --- Q2{¿Por qué lo hace?}
+    Q2 --> A2[Maximización de beneficios]
+    Q2 --> A2_2[Optimización de recursos]
+
+    %% ¿Qué actividades realiza?
+    Firma --- Q3{¿Qué hace?}
+    Q3 --> A3[Inversión]
+    Q3 --> A3_2[Producción]
+    Q3 --> A3_3[Generación de empleo]
+
+    %% Horizontes Temporales
+    Firma --- Q4{¿Cuándo y cómo?}
+    
+    subgraph Corto_Plazo [Corto Plazo]
+        Q4 --> CP[Factores Fijos vs Variables]
+        CP --> CP_L[Solo crece aumentando L -Trabajo-]
+        CP_L --> PMeL["PMeL (Q/L): Eficiencia promedio"]
+        CP_L --> PMgL["PMgL (ΔQ/ΔL): Aporte del último trabajador"]
+    end
+
+    subgraph Largo_Plazo [Largo Plazo]
+        Q4 --> LP[Todos los factores son variables]
+        LP --> K_L[Relación Capital K y Trabajo L]
+        K_L --> Isocuanta["Isocuanta: ¿Cuánto QUEREMOS producir?"]
+        K_L --> Isocosto["Isocosto: ¿Cuánto PODEMOS pagar?"]
+    end
+
+    %% Equilibrio
+    Isocuanta --- EQ((Equilibrio del Productor))
+    Isocosto --- EQ
+    EQ --> Final[Producción deseada al menor costo posible]
+
+    %% Estilos
+    style Firma fill:#f9f,stroke:#333,stroke-width:4px
+    style EQ fill:#00ff00,stroke:#333,stroke-width:2px
+    style Corto_Plazo fill:#e1f5fe,stroke:#01579b
+    style Largo_Plazo fill:#fff3e0,stroke:#e65100
