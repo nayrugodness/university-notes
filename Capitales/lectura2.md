@@ -77,6 +77,6 @@ más robustos. - Existe el desafío de la **heterogeneidad económica** en
 Latinoamérica.
 
 **Seguridad jurídica** - Se mencionan los **Acuerdos Internacionales de
-Inversión (AII)**. - Se plantea la necesidad de reformarlos para: -
+Inversión (AII)**
 promover crecimiento sostenible - resolver conflictos entre estados e
 inversores de manera justa
